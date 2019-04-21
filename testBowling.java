@@ -53,4 +53,16 @@ public class testBowling {
 		  
 		  assertEquals(this.bowling.getPuntaje(), 9);
 	  }  
+	  
+	  @Test
+	  public void unLanzamientoBienDeDos() {
+		  int cantidadLanzamientos=1, cantidadPinosTirados=5;
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 0);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 0);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
+		  
+		  
+		  assertEquals(this.bowling.getPuntaje(), 10);
+	  }  
 	}

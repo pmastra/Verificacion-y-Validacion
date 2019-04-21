@@ -5,7 +5,7 @@ public class Bowling {
 	private int lanzamientosJug1[] = new int[21];
 	private int lanzamientosJug2[] = new int[21];
 	private int pinos;
-	
+	private boolean spare=false;
 	private boolean strike=false;
 	
 	
