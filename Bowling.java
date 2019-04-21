@@ -47,16 +47,13 @@ public class Bowling {
     				puntaje+=pinosTirados;
     				lanzamientoIndice++;
     			}
-    		}
-    		
-    		
+    		} else {   		
     		
     		lanzamientosJug[lanzamientoIndice]=pinosTirados;
     		puntaje+=pinosTirados;
     		lanzamientoIndice++;
 
-    		
-    		
+    		}
     	}
     }
     
