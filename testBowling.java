@@ -1,3 +1,5 @@
+package Bowling;
+
 import static org.junit.Assert.assertEquals;
 import org.junit.*;
 
@@ -27,17 +29,20 @@ public class testBowling {
 	    
 	  }
 	  
-	  @Test
+	  /* @Test
 	  public void meteUnStrike() {
 		  
 		  int cantidadlanzamientos=1, cantidadPinosTirados=10;
+		  nLanzamientos(this.bowling, 1, 2);
+
 		  nLanzamientos(this.bowling, cantidadlanzamientos, cantidadPinosTirados);
 		  nLanzamientos(this.bowling, 1, 2);
 		  nLanzamientos(this.bowling, 1, 3);
 		  //Test para verificar que se cumple un strike y luego suma los 2 proximos lanzamientos.
-		  assert(this.bowling.getPuntaje()>=15);
-	    
+		  //assert(this.bowling.getPuntaje()>=15);
+		  assertEquals(this.bowling.getPuntaje(), 17);
+
 	  }
-	  
+	  */
 	  
 	}
