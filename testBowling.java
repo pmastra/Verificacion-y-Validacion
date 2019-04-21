@@ -6,6 +6,7 @@ import org.junit.*;
 public class testBowling {
 	  private Bowling bowling;
 
+	  //metodo n lanzamientos
 	  public void nLanzamientos(Bowling juego, int cantidadLanzamientos, int cantPinos) {
 		  
 	    for(int i = 0; i < cantidadLanzamientos; i++) {
