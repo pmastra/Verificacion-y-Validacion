@@ -1,11 +1,10 @@
 # Verificacion-y-Validacion
-============================
 
-# Objetivos
+Objetivos
 --------------
 Se plantea desarrollar un algoritmo que simule el juego bowling, el cual debe soportar todas las jugadas permitidas en el juego, acatando a las reglas del mismo. El desarrollo debe ser llevado a cabo usando una metodologia llamada TDD (Test Driven Development) o tambien conocido como Desarrollo Guiado por Pruebas. 
 
-# Arquitectura del proyecto
+Arquitectura del proyecto
 ----------------------------
 El proyecto es bastante simple, solo contiene dos clases:
 + bowling
@@ -15,7 +14,7 @@ El segundo metodo correspondiente a esta clase es el  getPuntaje, retorna el pun
 
 La segunda, es una clase encargada de ejecutar diferentes test, donde cada uno tiene un nombre descriptivo de su responsabilidad como test.
 
-# Complicaciones encontradas
+Complicaciones encontradas
 -----------------------------
 + Encontrar un nombre suficientemente descriptivo para un test es complejo, ya que para encontrarlo, se debe tener un lenguaje unificado capaz de representar cada elemento del dominio, ya que al trabajar en equipo, una misma accion, objeto o situacion puede llamarse de diferentes formas. Por ejemplo, realizar una jugada, es decir, lanzar 2 veces la bola, puede ser llamada como "lanzamiento", "jugada", "tiro", etc generando confusion y falta de claridad a la hora de definir nombres totalmente descriptivos.
 
