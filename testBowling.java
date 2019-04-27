@@ -56,6 +56,8 @@ public class testBowling {
 	  
 	  @Test
 	  public void unLanzamientoBienDeDos() {
+		  //Xq tira 4 veces? En la 2da ronda deberia tener 10 pinos mas, x lo tanto, 
+		  //el test seria <=18 ya que no tira strike pero como maximo puede tirar 9 en cada ronda
 		  int cantidadLanzamientos=1, cantidadPinosTirados=5;
 		  nLanzamientos(this.bowling, cantidadLanzamientos, 0);
 		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
@@ -65,4 +67,25 @@ public class testBowling {
 		  
 		  assertEquals(this.bowling.getPuntaje(), 10);
 	  }  
+	  
+	  @Test
+	  public void 10PuntosALaPrimera() {
+		  int cantidadLanzamientos=1, cantidadPinosTirados=10;
+		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
+		  
+		  assertEquals(this.bowling.getPuntaje(), 10);
+	  }
+	  
+	  
+	  @Test
+	  public void 10PuntosALaSegunda() {
+		  int cantidadLanzamientos=1, cantidadPinosTirados=10;
+		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
+
+		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
+		  
+		  assertEquals(this.bowling.getPuntaje(), 10);
+	  }
+	  
+	  
 	}
