@@ -62,9 +62,7 @@ public class Bowling {
     	return puntaje;
     }
     
-    public int getCantidadPinosTirados() {
-    	return pinos;
-    }
+    
 
 	
 }
