@@ -23,7 +23,7 @@ public class Bowling {
     					//Si entro aca es porque tiro 0 pinos
     		    		puntaje+=0;
     		    	}else {
-    		    		
+    		    		 
     		    		if((i-1)>=0) {
     		    			if((lanzamientoIndice%2)!=0 && (pinosTirados+lanzamientosJug[i-1])==10) {
 
