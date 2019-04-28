@@ -1,4 +1,4 @@
-# Verificacion-y-Validacion
+# Verificacion y Validacion de Software
 
 Objetivos
 --------------
@@ -22,3 +22,9 @@ Complicaciones encontradas
 + Saber por donde comenzar es complicado. Tuvimos situaciones donde definiamos un test, y resulto muy complejo desarrollar el codigo que cumpla con ese objetivo definido por el test, por lo tanto nos obligaba a replantearnos si estabamos siendo lo suficientemente especificos o demasiado generales. A su vez, nos ayudo a descomponer un fragmento del problema en sub problemas mas facilmente.
 
 + Adaptarse a la forma de trabajo es dificil, pero como todo, es solo superar la curva de aprendizaje.
+
+Ventajas encontradas
+----------------------
++ Permite generar trazas mas facilmente. Esto se debe a que al realizar simulaciones con los test, probabamos casos mas especificos y cuando uno fallaba, ya nos daba una idea de por que camino del codigo podia estar la falla.
+
++ Cuando se codifica una funcionalidad, no es necesario revisarla exhaustivamente antes de probarla ya que se prueba el(los) test correspondiente(s) y si estos test estan bien diseñados y abarcan todas las posibilidades, entonces la ejecucion deberia dar correctamente. Esto a la larga, alivia la energia, tiempo y estres en revisar el codigo.
