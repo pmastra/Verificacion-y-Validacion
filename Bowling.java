@@ -3,14 +3,14 @@ package Bowling;
 public class Bowling {
 	private int puntaje;
 	private int lanzamientosJug[] = new int[21];
-	private boolean spare=false;
-	private boolean strike=false;
+
 	private int lanzamientoIndice = 0;
 	
 	public void lanzarBola(int n) {
         this.lanzamientosJug[lanzamientoIndice] = n;
         
-        if((this.lanzamientoIndice%2)==0 && n==10) {
+        if(this.lanzamientoIndice<18 && (this.lanzamientoIndice%2)==0 && n==10) {
+        	//<18 para la jugada final que es especifica
             this.lanzamientoIndice++;
 
         }
@@ -47,9 +47,8 @@ public class Bowling {
         		}else {
 
     				if((i%2)==0) {
-    					strike=true;
     					//Si entramos aca es porque hizo un spare
-    					if(strike && (i+2)<lanzamientosJug.length && (i+3)<lanzamientosJug.length){
+    					if((i+4)<lanzamientosJug.length){
         					if((lanzamientosJug[i+2]==10)) {
         						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+4];
         					}else {
@@ -58,7 +57,6 @@ public class Bowling {
         					
     					}
     				}else {
-    					spare=true;
     					if((i+1)<lanzamientosJug.length) {
 	    					//Si entramos aca es porque hizo un strike
 	        				puntaje+=lanzamientosJug[i+1];
