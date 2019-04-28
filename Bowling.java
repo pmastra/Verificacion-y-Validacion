@@ -2,8 +2,7 @@ package Bowling;
 
 public class Bowling {
 	private int puntaje;
-	private int lanzamientosJug1[] = new int[21];
-	private int lanzamientosJug2[] = new int[21];
+	private int lanzamientosJug[] = new int[21];
 	private int pinos;
 	private boolean spare=false;
 	private boolean strike=false;
@@ -14,16 +13,6 @@ public class Bowling {
 	private int lanzamientoIndice = 0;
      
     public void lanzarBola(int pinosTirados) {
-    	int[] lanzamientosJug;
-    	
-    	if(tocaJugador1) {
-    		lanzamientosJug=lanzamientosJug1;
-    	}else {
-    		lanzamientosJug=lanzamientosJug2;
-
-    	}
-    	
-
     	if(pinosTirados==0) {
     		lanzamientosJug[lanzamientoIndice]=pinosTirados;
     		lanzamientoIndice++;
@@ -60,9 +49,5 @@ public class Bowling {
     
     public int getPuntaje() {
     	return puntaje;
-    }
-    
-    
-
-	
+    }	
 }
