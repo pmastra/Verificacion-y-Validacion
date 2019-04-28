@@ -161,6 +161,16 @@ public class testBowling {
 	    
 	  }
 	  
+	  @Test
+	  public void todosStrikeUltimoNormal() {
+		  
+		  int cantidadlanzamientos=11, cantidadPinosTirados=10;
+		  nLanzamientos(this.bowling, cantidadlanzamientos, cantidadPinosTirados);
+		  nLanzamientos(this.bowling, 1, 9);
+		  assertEquals(this.bowling.getPuntaje(), 300);
+	    
+	  }
+	  
 	
 	  
 	}
