@@ -134,4 +134,19 @@ public class testBowling {
 		  assertEquals(this.bowling.getPuntaje(), 39);
 	  }
 	  
+	  @Test
+	  public void medioStrikeYUnStrike() {
+		  int cantidadLanzamientos=1, cantidadPinosTirados=5;
+		  
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 5);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 5);
+		  
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 10);
+
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+
+		  assertEquals(this.bowling.getPuntaje(), 42);
+	  }
+	  
 	}
