@@ -9,6 +9,12 @@ public class Bowling {
 	
 	public void lanzarBola(int n) {
         this.lanzamientosJug[lanzamientoIndice] = n;
+        
+        if((this.lanzamientoIndice%2)==0 && n==10) {
+            this.lanzamientoIndice++;
+
+        }
+        
         this.lanzamientoIndice++;
     }
      
@@ -23,9 +29,9 @@ public class Bowling {
     					//Si entro aca es porque tiro 0 pinos
     		    		puntaje+=0;
     		    	}else {
-    		    		 
+    		    		
     		    		if((i-1)>=0) {
-    		    			if((lanzamientoIndice%2)!=0 && (pinosTirados+lanzamientosJug[i-1])==10) {
+    		    			if((i%2)!=0 && (pinosTirados+lanzamientosJug[i-1])==10) {
 
             					if((i+1)<lanzamientosJug.length) {
     	        					//Si entramos aca es porque hizo un strike
@@ -40,22 +46,21 @@ public class Bowling {
     				
         		}else {
 
-    				if((lanzamientoIndice%2)==0) {
+    				if((i%2)==0) {
     					strike=true;
     					//Si entramos aca es porque hizo un spare
-    					if((i+1)<lanzamientosJug.length && (i+2)<lanzamientosJug.length){
-    						
-    						puntaje+=pinosTirados+lanzamientosJug[i+1]+lanzamientosJug[i+2];
-    					
+    					if(strike && (i+2)<lanzamientosJug.length && (i+3)<lanzamientosJug.length){
+        					
+    						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+3];
     					}
-    				}
-    				else {
+    				}else {
     					spare=true;
     					if((i+1)<lanzamientosJug.length) {
-    					//Si entramos aca es porque hizo un strike
-        				puntaje+=pinosTirados+lanzamientosJug[i+1];
+	    					//Si entramos aca es porque hizo un strike
+	        				puntaje+=lanzamientosJug[i+1];
     					}
     				}
+    				puntaje+=pinosTirados;
     			}
     		}
     		return puntaje;

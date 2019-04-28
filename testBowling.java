@@ -70,7 +70,7 @@ public class testBowling {
 	  public void DiezPuntosALaPrimera() {
 		  int cantidadLanzamientos=1, cantidadPinosTirados=10;
 		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
-		  
+		  nLanzamientos(this.bowling, 5, 0);
 		  assertEquals(this.bowling.getPuntaje(), 10);
 	  }
 	  //Este test lo comente porque no es real que tire a la segunda o a que segunda nos referimos? Segundo 
@@ -105,6 +105,7 @@ public class testBowling {
 		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
 		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
 
+		  nLanzamientos(this.bowling, 5, 0);
 		  assertEquals(this.bowling.getPuntaje(), 22);
 	  }
 	  
@@ -145,8 +146,21 @@ public class testBowling {
 
 		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
 		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+		  nLanzamientos(this.bowling, 5, 0);
 
 		  assertEquals(this.bowling.getPuntaje(), 42);
 	  }
+	  
+	  @Test
+	  public void todosStrike() {
+		  
+		  int cantidadlanzamientos=12, cantidadPinosTirados=10;
+		  nLanzamientos(this.bowling, cantidadlanzamientos, cantidadPinosTirados);
+		  
+		  assertEquals(this.bowling.getPuntaje(), 300);
+	    
+	  }
+	  
+	
 	  
 	}
