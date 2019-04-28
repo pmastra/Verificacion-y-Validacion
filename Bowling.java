@@ -3,13 +3,16 @@ package Bowling;
 public class Bowling {
 	private int puntaje;
 	private int lanzamientosJug[] = new int[21];
-	private int pinos;
 	private boolean spare=false;
 	private boolean strike=false;
-	
 	private int lanzamientoIndice = 0;
+	
+	public void lanzarBola(int n) {
+        this.lanzamientosJug[lanzamientoIndice] = n;
+        this.lanzamientoIndice++;
+    }
      
-    public void lanzarBola(int pinosTirados) {
+    public void calcularPuntaje() {
     		
     			if(pinosTirados!=10) {
     			//Si entra aca es porque no hizo strike ni spare
@@ -46,6 +49,6 @@ public class Bowling {
     
     
     public int getPuntaje() {
-    	return puntaje;
+    	return calcularPuntaje();
     }	
 }
