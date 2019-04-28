@@ -97,4 +97,26 @@ public class testBowling {
 		  assertEquals(this.bowling.getPuntaje(), 16);
 	  }
 	  
+	  @Test
+	  public void unStrike() {
+		  int cantidadLanzamientos=1, cantidadPinosTirados=5;
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 10);
+		  
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+
+		  assertEquals(this.bowling.getPuntaje(), 22);
+	  }
+	  
+	  public void dosStrike() {
+		  int cantidadLanzamientos=1, cantidadPinosTirados=5;
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 10);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 10);
+
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+
+		  assertEquals(this.bowling.getPuntaje(), 45);
+	  }
+	  
 	}
