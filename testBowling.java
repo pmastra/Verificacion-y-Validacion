@@ -87,4 +87,14 @@ public class testBowling {
 	  }
 	  */
 	  
+	  @Test
+	  public void medioStrike() {
+		  int cantidadLanzamientos=1, cantidadPinosTirados=5;
+		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
+		  nLanzamientos(this.bowling, cantidadLanzamientos, 3);
+
+		  assertEquals(this.bowling.getPuntaje(), 16);
+	  }
+	  
 	}
