@@ -49,12 +49,21 @@ public class Bowling {
     				if((i%2)==0) {
     					//Si entramos aca es porque hizo un spare
     					if((i+4)<lanzamientosJug.length){
-        					if((lanzamientosJug[i+2]==10)) {
-        						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+4];
-        					}else {
-        						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+3];
-        					}
-        					
+    						if(i<16) {
+    							//caso especifico
+    							
+    							if((lanzamientosJug[i+2]==10)) {
+            						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+4];
+            					}else {
+            						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+3];
+
+            					}
+    						}else {
+    							//para posicion 18
+        						puntaje+=lanzamientosJug[i+1]+lanzamientosJug[i+2];
+
+    						}
+    					
     					}
     				}else {
     					if((i+1)<lanzamientosJug.length) {
@@ -65,6 +74,8 @@ public class Bowling {
     				puntaje+=pinosTirados;
     			}
     		}
+    		
+    		
     		return puntaje;
     }
     
