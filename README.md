@@ -28,3 +28,7 @@ Ventajas encontradas
 + Permite generar trazas mas facilmente. Esto se debe a que al realizar simulaciones con los test, probabamos casos mas especificos y cuando uno fallaba, ya nos daba una idea de por que camino del codigo podia estar la falla.
 
 + Cuando se codifica una funcionalidad, no es necesario revisarla exhaustivamente antes de probarla ya que se prueba el(los) test correspondiente(s) y si estos test estan bien diseñados y abarcan todas las posibilidades, entonces la ejecucion deberia dar correctamente. Esto a la larga, alivia la energia, tiempo y estres en revisar el codigo.
+
++ Obliga a entender el dominio con el que se trabaja. En este caso, es un juego de bowling, pero se al ser una metodologia de programacion, se puede aplicar a cualquier dominio. Es imposible definir un test de calidad sin saber que es lo que se desea, y para saber lo que se desea, se debe saber como funciona el dominio.
+
++ Da la posibilidad a cuantificar el software. Pensar en todos los test que debe cumplir un modulo antes de codificarlo, permite saber el avance del mismo, por ejemplo, que una funcionalidad tenga que cumplir 10 test, y se lleven 4 de los 10 test codificados y que cumplan con el mismo significa que se lleva un 40% del modulo codificado.
