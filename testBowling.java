@@ -61,31 +61,30 @@ public class testBowling {
 		  int cantidadLanzamientos=1, cantidadPinosTirados=5;
 		  nLanzamientos(this.bowling, cantidadLanzamientos, 0);
 		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
-		  nLanzamientos(this.bowling, cantidadLanzamientos, 0);
-		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
 		  
 		  
-		  assertEquals(this.bowling.getPuntaje(), 10);
+		  assertEquals(this.bowling.getPuntaje(), 5);
 	  }  
 	  
 	  @Test
-	  public void 10PuntosALaPrimera() {
+	  public void DiezPuntosALaPrimera() {
 		  int cantidadLanzamientos=1, cantidadPinosTirados=10;
 		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
 		  
 		  assertEquals(this.bowling.getPuntaje(), 10);
 	  }
-	  
-	  
+	  //Este test lo comente porque no es real que tire a la segunda o a que segunda nos referimos? Segundo 
+	  // lanzamiento o segunda ronda?
+	  /**
 	  @Test
-	  public void 10PuntosALaSegunda() {
+	  public void DiezPuntosALaSegunda() {
 		  int cantidadLanzamientos=1, cantidadPinosTirados=10;
 		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
 
 		  nLanzamientos(this.bowling, cantidadLanzamientos, cantidadPinosTirados);
 		  
-		  assertEquals(this.bowling.getPuntaje(), 10);
+		  assertEquals(this.bowling.getPuntaje(), 20);
 	  }
-	  
+	  */
 	  
 	}
