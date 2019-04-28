@@ -50,8 +50,12 @@ public class Bowling {
     					strike=true;
     					//Si entramos aca es porque hizo un spare
     					if(strike && (i+2)<lanzamientosJug.length && (i+3)<lanzamientosJug.length){
+        					if((lanzamientosJug[i+2]==10)) {
+        						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+4];
+        					}else {
+        						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+3];
+        					}
         					
-    						puntaje+=lanzamientosJug[i+2]+lanzamientosJug[i+3];
     					}
     				}else {
     					spare=true;
