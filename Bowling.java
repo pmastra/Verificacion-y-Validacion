@@ -14,32 +14,47 @@ public class Bowling {
      
     public int calcularPuntaje() {
     		for(int i=0; i<lanzamientoIndice; i++){
+    			
     			int pinosTirados=lanzamientosJug[i];
+    			
     			if(pinosTirados!=10) {
     			//Si entra aca es porque no hizo strike ni spare
     				if(pinosTirados==0) {
     					//Si entro aca es porque tiro 0 pinos
     		    		puntaje+=0;
-    		    	}
-    				else {
-    					//Si entro aca es porque tiro algunos pinos
+    		    	}else {
+    		    		
+    		    		if((i-1)>=0) {
+    		    			if((lanzamientoIndice%2)!=0 && (pinosTirados+lanzamientosJug[i-1])==10) {
+
+            					if((i+1)<lanzamientosJug.length) {
+    	        					//Si entramos aca es porque hizo un strike
+    	            				puntaje+=lanzamientosJug[i+1];
+            					}
+            					
+        					} 
+    		    		}
         				puntaje+=pinosTirados;
+
     				}
-        		}
-    			else {
-    				if(lanzamientoIndice%2==0) {
+    				
+        		}else {
+
+    				if((lanzamientoIndice%2)==0) {
     					strike=true;
     					//Si entramos aca es porque hizo un spare
-    					lanzamientosJug[lanzamientoIndice]=pinosTirados;
-    					lanzamientoIndice++;
-        				puntaje+=10;	
+    					if((i+1)<lanzamientosJug.length && (i+2)<lanzamientosJug.length){
+    						
+    						puntaje+=pinosTirados+lanzamientosJug[i+1]+lanzamientosJug[i+2];
+    					
+    					}
     				}
     				else {
     					spare=true;
+    					if((i+1)<lanzamientosJug.length) {
     					//Si entramos aca es porque hizo un strike
-    					lanzamientosJug[lanzamientoIndice]=pinosTirados;
-    					lanzamientoIndice++;
-        				puntaje+=10;
+        				puntaje+=pinosTirados+lanzamientosJug[i+1];
+    					}
     				}
     			}
     		}
