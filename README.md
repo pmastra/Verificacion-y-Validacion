@@ -27,7 +27,7 @@ Ejemplo de un ciclo de TDD
 + Crear el test deseado
 + Correr el programa, el cual deberia dar como falla, ya que no existe una solucion/implementacion para el test. En este caso, el test sale color rojo
 + Implementar la solucion al test. Si la solucion es correcta, el test sale color verde, sino, va a indicar que este no se cumple, por lo tanto hay que re analizar la solucion y volver a probar.
-+ Si el test sale en verde, significa que esta funcionalidad, aun que sea minima, ya se cumple, por lo tanto se puede comenzar a trabajar en el proximo test/funcionalidad. De esta forma, desarrollar el sistema de manera incremental.
++ Si el test sale en verde, significa que esta funcionalidad, aun que sea minima, ya se cumple, por lo tanto se puede comenzar a trabajar en el proximo test/funcionalidad. De esta forma, se puede desarrollar el sistema de manera incremental.
 
 Complicaciones encontradas
 -----------------------------
