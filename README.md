@@ -24,6 +24,8 @@ Complicaciones encontradas
 
 + Tuvimos que reestructurar muchas veces la logica del juego ya que al avanzar en los casos del test y darle mas dificultad nos encontramos que no respetabamos ciertas jugadas, de esta manera agregamos nuevas variables de control y mas condicionales que eran necesarios para el correcto calculo del puntaje.
 
++Trabajar con esta metodología nos ayudó a seguir una traza sencilla de todos los errores de programación ya sea con respecto a la solución del problema, como para solucionar errores de lógica como accesos a arreglos fuera de rango. Permitiéndonos centrarnos en la zona del problema y obviando el resto del código. Esta forma de trabajar puede ser muy util para solucionar y arreglar problemas de codigo de forma rapida, pero a su vez, puede generar un codigo bastante "hard cordeado" evitando la reutilizacion de codigo y algunas buenas practicas de programacion.
+
 + Adaptarse a la forma de trabajo es dificil, pero como todo, es solo superar la curva de aprendizaje.
 
 Ventajas encontradas
