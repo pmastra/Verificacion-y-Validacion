@@ -10,7 +10,8 @@ El proyecto es bastante simple, solo contiene dos clases:
 + bowling
 + testBowling
 
-La primera, bowling, es un modelo de objeto que contiene 2 metodos, el primero, lanzarBola, se encarga de recibir el parametro cantidadDePinos, el cual indica cuantos pinos se tiran en ese tiro. Considerando tal parametro, se encarga de ejecutar el algoritmo que decide que acciones tomar, en base al estado del juego este toma determinadas acciones. 
+La primera, bowling, es un modelo de objeto que contiene 2 metodos, el primero, lanzarBola, se encarga de setear con valores todas las jugadas que fueron realizadas, teniendo en cuenta el caso especial de si se logra un strike en las ultimas rondas del juego.
+recibir el parametro cantidadDePinos, el cual indica cuantos pinos se tiran en ese tiro. Considerando tal parametro, se encarga de ejecutar el algoritmo que decide que acciones tomar, en base al estado del juego este toma determinadas acciones. 
 El segundo metodo correspondiente a esta clase es el  getPuntaje, retorna el puntaje basado en el estado actual del juego en el momento de su ejecucion.
 
 La segunda, es una clase encargada de ejecutar diferentes test, donde cada uno tiene un nombre descriptivo de su responsabilidad como test.
