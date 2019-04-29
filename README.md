@@ -16,6 +16,19 @@ Por ultimo tenemos el tercer metodo, getPuntaje, retorna el puntaje basado en el
 
 La segunda, es una clase encargada de ejecutar diferentes test, donde cada uno tiene un nombre descriptivo de su responsabilidad como test.
 
+Instrucciones para correr el proyecto
+------------------------------------
++ Tener un entorno de programacion java (Eclipse preferentemente)
++ Colocar las 2 clases del proyecto en un nuevo proyecto
++ Colocar la libreria Junit en caso de ser solicitada, esta ya viene en el entorno de java, solo es necesario agregarla
+
+Ejemplo de un ciclo de TDD
+--------------------------
++ Crear el test deseado
++ Correr el programa, el cual deberia dar como falla, ya que no existe una solucion/implementacion para el test. En este caso, el test sale color rojo
++ Implementar la solucion al test. Si la solucion es correcta, el test sale color verde, sino, va a indicar que este no se cumple, por lo tanto hay que re analizar la solucion y volver a probar.
++ Si el test sale en verde, significa que esta funcionalidad, aun que sea minima, ya se cumple, por lo tanto se puede comenzar a trabajar en el proximo test/funcionalidad. De esta forma, desarrollar el sistema de manera incremental.
+
 Complicaciones encontradas
 -----------------------------
 + Encontrar un nombre suficientemente descriptivo para un test es complejo, ya que para encontrarlo, se debe tener un lenguaje unificado capaz de representar cada elemento del dominio, ya que al trabajar en equipo, una misma accion, objeto o situacion puede llamarse de diferentes formas. Por ejemplo, realizar una jugada, es decir, lanzar 2 veces la bola, puede ser llamada como "lanzamiento", "jugada", "tiro", etc generando confusion y falta de claridad a la hora de definir nombres totalmente descriptivos.
@@ -37,5 +50,7 @@ Ventajas encontradas
 + Obliga a entender el dominio con el que se trabaja. En este caso, es un juego de bowling, pero al ser una metodologia de programacion, se puede aplicar a cualquier dominio. Es imposible definir un test de calidad sin saber que es lo que se desea, y para saber lo que se desea, se debe saber como funciona el dominio.
 
 + Da la posibilidad a cuantificar el software. Pensar en todos los test que debe cumplir un modulo antes de codificarlo, permite saber el avance del mismo, por ejemplo, que una funcionalidad tenga que cumplir 10 test, y se lleven 4 de los 10 test codificados y que cumplan con el mismo significa que se lleva un 40% del modulo codificado.
+
++ Cuando un test se cumple, se puede estar seguro de que va a funcionar si no se toca nada. Gracias a esto, cada paso que se da, es un paso seguro, donde no hay inseguridades ante la implementacion. Obviamente, la seguridad de la ejecucion correcta del codigo, depende de que tan buenos sean los test y para que sean seguros, estos deben abarcar todos los casos.
 
 + Nos dio la capacidad de trabajar de manera colaborativa y revisando todos los cambios de nuestro compañero antes de hacer cualquier commit, ademas el hecho de la historia nos permite volver rapidamente a una version antigua. En nuestro caso utilizamos el IDE Eclipse y logramos sincronizar con nuestro repositorio de github, permitiendonos trabajar al mismo tiempo pero en distintas clases, esto ayudo al trabajo colaborativo.
