@@ -49,7 +49,7 @@ Ventajas encontradas
 
 + Obliga a entender el dominio con el que se trabaja. En este caso, es un juego de bowling, pero al ser una metodologia de programacion, se puede aplicar a cualquier dominio. Es imposible definir un test de calidad sin saber que es lo que se desea, y para saber lo que se desea, se debe saber como funciona el dominio.
 
-+ Da la posibilidad a cuantificar el software. Pensar en todos los test que debe cumplir un modulo antes de codificarlo, permite saber el avance del mismo, por ejemplo, que una funcionalidad tenga que cumplir 10 test, y se lleven 4 de los 10 test codificados y que cumplan con el mismo significa que se lleva un 40% del modulo codificado.
++ Da la posibilidad a cuantificar el software. Pensar en todos los test que debe cumplir un modulo antes de codificarlo, permite saber el avance del mismo, por ejemplo, que una funcionalidad tenga que cumplir 10 test, y se lleven 4 de los 10 test codificados y que cumplan con el mismo puede significar que se lleva un 40% del modulo codificado.
 
 + Cuando un test se cumple, se puede estar seguro de que va a funcionar si no se toca nada. Gracias a esto, cada paso que se da, es un paso seguro, donde no hay inseguridades ante la implementacion. Obviamente, la seguridad de la ejecucion correcta del codigo, depende de que tan buenos sean los test y para que sean seguros, estos deben abarcar todos los casos.
 
